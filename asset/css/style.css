@@ -197,6 +197,33 @@ body {
   font-size: 24px;
 }
 
+.animacion-h1 {
+  font-size: 3rem;
+  animation: slideDerecha 2s ease-out;
+}
+
+@keyframes slideDerecha {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fadein-parrafo {
+  opacity: 0; /* Inicialmente invisible */
+  animation: fadeIn 2s ease-in forwards; /* Animación de fade in */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Al final de la animación, será completamente visible */
+  }
+}
+
 /* Media Queries */
 @media (max-width: 996px) {
   .gran-contenedor {
