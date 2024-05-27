@@ -495,5 +495,10 @@ body {
       100vh - 220px
     ); /* Altura fija, resta espacio ocupado por otros elementos */
     overflow-y: auto;
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE y Edge */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  }
+  .galeria::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en WebKit (Chrome, Safari) */
   }
 }
